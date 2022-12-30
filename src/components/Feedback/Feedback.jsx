@@ -13,15 +13,15 @@ export default function Feedback() {
   const leaveFeedback = key => {
     switch (key) {
       case 'good':
-        setGood(useState => useState + 1);
+        setGood(good => good + 1);
         break;
 
       case 'neutral':
-        setNeutral(useState => useState + 1);
+        setNeutral(neutral => neutral + 1);
         break;
 
       case 'bad':
-        setBad(useState => useState + 1);
+        setBad(bad => bad + 1);
         break;
 
       default:
